@@ -11,11 +11,12 @@ $(document).ready(function(){
     $('.slider').slider({interval: 5000});
 });
 $(document).ready(function(){
-    $('.carousel').carousel();
+    $('.materialboxed').materialbox();
 });
 
 $(document).ready(function(){
-    $('.materialboxed').materialbox();
+    $('.carousel').carousel();
 });
+
 
 
