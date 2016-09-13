@@ -2,7 +2,9 @@
   .parallax-container {
     height:auto;
 }
-
+#form_div{
+   border-radius: 25px;
+ }
   .parallax {
     position: relative;
     width: 100%; }
@@ -10,6 +12,4 @@
      position: relative; }
  } 
 
- #form_div{
-   border-radius: 25px;
- }
+ 
