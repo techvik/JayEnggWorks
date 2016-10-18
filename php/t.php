@@ -1,6 +1,6 @@
 <?php
 
-require 'php/PHPMailerAutoload.php';
+require 'PHPMailerAutoload.php';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -12,15 +12,15 @@ $mail = new PHPMailer;
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-//$mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com;smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'callvikram22@gmail.com';                 // SMTP username
 $mail->Password = 'gansharvikvar';                           // SMTP password
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
+$mail->Port = 465;                                    // TCP port to connect to
 
 $mail->setFrom($email, $name);
-//$mail->addAddress('joe@example.net', 'Joe User');     // Add a recipient
+$mail->addAddress('callvikram22@gmail.com', 'Vikram');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
