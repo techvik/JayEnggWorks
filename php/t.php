@@ -10,7 +10,7 @@
     else{		
 	    $from="From: $name<$email>\r\nReturn-path: $email";
         $subject="Message sent using your contact form";
-		mail("youremail@yoursite.com", $subject, $message."Phone No:".$phone, $from);
+		mail("callvikram22@gmail.com", $subject, $message."Phone No:".$phone, $from);
 		echo "Email sent!";
 	    }
     }  
