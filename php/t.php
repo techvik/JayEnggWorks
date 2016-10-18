@@ -13,5 +13,5 @@
 		mail("callvikram22@gmail.com", $subject, $message."Phone No:".$phone, $from);
 		echo "Email sent!";
 	    }
-    }  
+    
 ?>    
