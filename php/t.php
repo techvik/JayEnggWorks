@@ -1,17 +1,16 @@
+
 <?php
- $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $phone=$_REQUEST['phone'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message=="")||($phone==""))
-        {
-		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-	    }
-    else{		
-	    $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-		mail("callvikram22@gmail.com", $subject, $message."Phone No:".$phone, $from);
-		echo "Email sent!";
-	    }
+// the message
+$msg = "Name:".$_POST['name']."<br> Email:".$_POST['email']."<br> Phone No:".$_POST['phone']."<br> Message:".$_POST['message']."<br>";
+
+
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,150);
+
+// send email
+mail("callvikram22@gmail.com","Form",$msg);
+
+echo "<p>Sent!!</p>";
+?>
     
-?>    
+  
