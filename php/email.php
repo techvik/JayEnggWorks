@@ -5,7 +5,7 @@ if(isset($_POST['email'])) {
     function died($error) {
         echo "We are sorry, but there were error(s) in the form submission!<br>";
         echo "These are the error(s):".$error."<br>";
-        echo "Please try again"
+        echo "Please try again";
         die();
     }
 
