@@ -3,7 +3,7 @@ if(isset($_POST['email'])) {
     $email_to = "callvikram22@gmail.com";
     $email_subject = "Jay Engineering Works Query from website";
     function died($error) {
-        echo "We are sorry, but there were error(s) in the form submission!<br>"
+        echo "We are sorry, but there were error(s) in the form submission!<br>";
         echo "These are the error(s):".$error."<br>";
         echo "Please try again"
         die();
