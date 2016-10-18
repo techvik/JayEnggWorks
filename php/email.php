@@ -9,7 +9,7 @@ if(isset($_POST['email'])) {
         die();
     }
 
-    if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['phone']) || !isset($_POST['message'])){
+    if(!isset($_POST['name']) || !isset($_POST['email']) || !isset($_POST['phone']) || !isset($_POST['message']))
         died("Some fields were not filled.");
     }
 
@@ -99,6 +99,6 @@ $headers = 'From: '.$email."\r\n".
  
 <?php
  
-}
+
  
 ?>
