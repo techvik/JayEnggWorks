@@ -91,8 +91,8 @@ $headers = 'From: '.$email."\r\n".
  
  
  
-<!-- include your own success html here -->
-echo "<p>You have sent a mail</p>";
+<!-- include your own success html -->
+<p>You have sent a mail</p>
  
  
  
